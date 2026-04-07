@@ -17,8 +17,6 @@ My changes include adjustments for things like:
 - A Windows 7-like corner bar / “Show desktop” strip
 - Small Nemo and general usability refinements
 
-A complete changelog is available below.
-
 ## Supported platforms
 
 - Cinnamon 6.6+
