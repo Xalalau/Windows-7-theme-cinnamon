@@ -104,33 +104,6 @@ That means:
 
 This repo exists because I wanted a working repair, not a new full-time project.
 
-## My changes so far
-
-### Fixed
-- Adjusted general button spacing to improve icon and label alignment in the Cinnamon Shell.
-- Improved progress bar colors in the panel and window list for better contrast and usability.
-- Wider grouped window list item sizing for a more Windows 7'ish layout.
-- Improved secondary text contrast in menus, calendar, power, and battery applets to avoid washed-out text on light backgrounds.
-- Fixed calendar event hover states to improve readability.
-- Improved the sound applet player overlay with a lighter background, clearer text, and better-sized control buttons.
-- Fixed titlebar button padding in both GTK3 and GTK4 so the `-`, `[]`, and `×` controls sit closer together and look better.
-- Fixed titlebar button sizing, spacing, and asset rendering in headerbars to preserve the crisp look of the original controls in GTK3 and GTK4.
-- Updated the selection/accent color so desktop icon labels no longer become unreadable.
-- Fixed TreeView and ColumnView progress rendering in GTK3 and GTK4 so selected rows no longer swap fill, trough, or text colors incorrectly.
-- Fixed GTK3 vertical scales using `marks-before` so slider assets no longer repeat incorrectly behind marks and labels.
-- Reduced horizontal padding only for shutdown/logout dialog buttons so longer labels fit better without making simpler confirmation dialogs look too small.
-
-### Improved
-- Restyled current Cinnamon dialog buttons such as confirm, yes/no, logout, and shutdown, with better hover, focus, pressed, and destructive-action states.
-- Reworked the end-session dialog to better match the Windows 7 visual style.
-- Enhanced the GTK3 translucent titlebar styling with clearer focused and unfocused states, bringing it closer to an Aero-like appearance.
-- Improved `levelbar` contrast in both GTK3 and GTK4.
-- Improved Nemo sidebar row spacing and file properties header spacing.
-
-### Added
-- Added a Windows 7-style corner bar for current Cinnamon / Mint 22.x, inspired by the original **Show desktop** strip.
-- Added subtle glass-like gradients and border lines to better mimic the original Windows 7 taskbar corner strip.
-
 ## More media
 
 <img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-15-51" src="https://github.com/user-attachments/assets/be054488-b189-474c-8b56-62f1e00cdd81" />
