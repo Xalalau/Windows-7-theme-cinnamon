@@ -1,5 +1,7 @@
 # Windows 7 Theme for Cinnamon 22.x
 
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-07-30" src="https://github.com/user-attachments/assets/fb405725-4bb5-4638-bf5b-e271f906550f" />
+
 This repository is a pragmatic compatibility fix for the classic B00merang Windows 7 theme on modern Cinnamon 22.x / Linux Mint 22.x systems.
 
 It is **not** a full re-creation of Windows 7, and it is **not** intended to be a perfect visual clone. The goal is simpler: make this beautiful theme usable again on current Cinnamon, with fewer breakages and better day-to-day usability.
@@ -119,4 +121,12 @@ This repo exists because I wanted a working repair, not a new full-time project.
 - Added subtle glass-like gradients and border lines to better mimic the original Windows 7 taskbar corner strip.
 
 ## More media
+
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-15-51" src="https://github.com/user-attachments/assets/be054488-b189-474c-8b56-62f1e00cdd81" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-14-55" src="https://github.com/user-attachments/assets/c194a4fa-41df-4e24-859f-d715d801b65b" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-07-12" src="https://github.com/user-attachments/assets/51262b3f-d060-4c2f-80ac-f17343a335dc" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-06-15" src="https://github.com/user-attachments/assets/c6a5fe7f-b801-4c1f-b864-0795758f320d" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-05-24" src="https://github.com/user-attachments/assets/6abf26d2-e9b9-4bcf-8c2e-c05cccd1db10" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-04-00" src="https://github.com/user-attachments/assets/2583a23f-3d34-4005-87df-54f04ecedbe0" />
+<img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-02-48" src="https://github.com/user-attachments/assets/d9405dfb-7875-4370-8f20-e161a0a1badf" />
 
