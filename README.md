@@ -2,13 +2,9 @@
 
 <img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-07-30" src="https://github.com/user-attachments/assets/fb405725-4bb5-4638-bf5b-e271f906550f" />
 
-This repository is a pragmatic and dirty compatibility fix (by me and GPT) for the classic B00merang Windows 7 theme on modern Cinnamon 22.x / Linux Mint 22.x systems.
+This repository is a pragmatic and somewhat dirty compatibility fix (by me and GPT) for the classic B00merang Windows 7 theme on modern Cinnamon 6.x / Linux Mint 22.x / GTK3 / GTK4 code.
 
 The point of this repo is to let people use the theme again in the current Cinnamon without obvious visual problems, broken controls, unreadable text, or awkward spacing. it is **not** intended to be a perfect visual clone of W7.
-
-## What's in the repo?
-
-This repo provides fixes for the old Windows 7 theme setup so it behaves better on current Cinnamon and newer GTK3/GTK4 apps.
 
 It includes adjustments for things like:
 
