@@ -4,9 +4,9 @@
 
 This repository is a pragmatic and somewhat dirty compatibility fix (by me and GPT) for the classic B00merang Windows 7 theme on modern Cinnamon 6.x / Linux Mint 22.x / GTK3 / GTK4 code.
 
-The point of this repo is to let people use the theme again in the current Cinnamon without obvious visual problems, broken controls, unreadable text, or awkward spacing. it is **not** intended to be a perfect visual clone of W7.
+The point of this repo is to let people use the theme again in the current Cinnamon without obvious visual problems, broken controls, unreadable text, or awkward spacing. It is **not** intended to be a perfect visual clone of W7.
 
-It includes adjustments for things like:
+My changes include adjustments for things like:
 
 - Cinnamon Shell spacing and dialog styling
 - Progress bars and selected-row progress rendering
