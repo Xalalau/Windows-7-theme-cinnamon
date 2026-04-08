@@ -3006,6 +3006,11 @@ https://github.com/linuxmint/nemo/blob/master/gresources/nemo-style-application.
   padding-left: 8px;
 }
 
+/* Pathbar breadcrumbs no focus - better border*/
+.nemo-window .path-bar button.text-button:backdrop {
+  border-color: #7c7c7c;
+}
+
 /* ===================================================================
 * General buttons
 * ===================================================================*/
