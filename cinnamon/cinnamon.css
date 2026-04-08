@@ -2554,7 +2554,8 @@ https://github.com/linuxmint/cinnamon-spices-applets
 }
 
 .dialog .message-dialog-title {
-  font-size: 12pt;
+  text-align: center;
+  font-size: 14pt;
   font-weight: bold;
   color: black;
   padding-bottom: 6px;
@@ -2639,33 +2640,7 @@ https://github.com/linuxmint/cinnamon-spices-applets
 
 /* Windows 7-like end-session dialog. */
 .dialog.end-session-dialog {
-  font-size: 9.5pt;
-  border-radius: 2px;
-  background-color: #fff;
-  border-image: url('menu-assets/background.png') 8;
-  color: black;
-  padding-right: 22px;
-  padding-left: 22px;
-  padding-bottom: 16px;
-  padding-top: 16px;
   width: 46em;
-}
-
-.end-session-dialog .dialog-content-box {
-  spacing: 10px;
-}
-
-.end-session-dialog .message-dialog-title {
-  font-size: 12pt;
-  font-weight: bold;
-  color: black;
-  padding-bottom: 6px;
-}
-
-.end-session-dialog .message-dialog-description {
-  font-size: 10pt;
-  color: #444444;
-  padding-bottom: 4px;
 }
 
 .end-session-dialog .dialog-list-title {
@@ -2694,25 +2669,6 @@ https://github.com/linuxmint/cinnamon-spices-applets
 .end-session-dialog .dialog-list-item-description {
   font-size: 8.5pt;
   color: #555555;
-}
-
-.end-session-dialog .dialog-button-box {
-  spacing: 8px;
-  padding-top: 10px;
-}
-
-/* Smaller horizontal padding only in the shutdown/logout row so
-   the texts fit without making Yes/No dialogs tiny. */
-.end-session-dialog .dialog-button {
-  font-size: 9pt;
-  padding: 5px 10px 6px;
-  min-height: 20px;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.end-session-dialog .dialog-button:destructive-action {
-  color: #b51515;
 }
 
 /* ===================================================================
