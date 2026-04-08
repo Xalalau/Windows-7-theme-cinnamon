@@ -2875,3 +2875,12 @@ https://github.com/linuxmint/cinnamon-spices-applets
   border-top: 1px solid rgba(255,255,255,0.30);
   border-bottom: 1px solid rgba(0,0,0,0.35);
 }
+
+/* ===================================================================
+* CinnVIIStarkMenu
+* ===================================================================*/
+
+/* Fix menu tilting due to a single pixel missing in the border below */
+.hover-icon {
+  border: 7px solid transparent;
+}
