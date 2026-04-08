@@ -2994,108 +2994,19 @@ read if you used those and something break with a version upgrade you're on your
  * of the file to keep my changes visible.
  * ===================================================================*/
 
+/*
+https://docs.gtk.org/gtk4/index.html#classes
+https://docs.gtk.org/gtk4/css-overview.html
+https://docs.gtk.org/gtk4/css-properties.html
+*/
+
 /* New accent color so that the names of desktop icons don't become invisible. */
 @define-color theme_selected_bg_color #1f9ede;
 @define-color theme_unfocused_selected_bg_color #1f9ede;
 
-
-/* General button style */
-
-button label {
-  padding: 4px;
-}
-
-button image {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 /* ===================================================================
-* GtkHeaderBar & more
+* GtkColumnView / GtkTreeView (progress cells and troughs)
 * ===================================================================*/
-
-/* Remove title button padding, so - [] x are next to each other */
-headerbar button image {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Titlebar buttons: keep assets crisp with original control spacing */
-headerbar windowcontrols button,
-windowcontrols button,
-headerbar button.titlebutton,
-.titlebar button.titlebutton {
-  min-width: 31px;
-  min-height: 22px;
-  padding: 0;
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: none;
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 31px 22px;
-  transition: none;
-}
-
-headerbar windowcontrols button.close,
-windowcontrols button.close,
-headerbar windowcontrols button.maximize,
-windowcontrols button.maximize,
-headerbar windowcontrols button.minimize,
-windowcontrols button.minimize,
-headerbar button.titlebutton.close,
-.titlebar button.titlebutton.close,
-headerbar button.titlebutton.maximize,
-.titlebar button.titlebutton.maximize,
-headerbar button.titlebutton.minimize,
-.titlebar button.titlebutton.minimize {
-  min-width: 31px;
-  min-height: 22px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 31px 22px;
-  transition: none;
-}
-
-headerbar windowcontrols button:backdrop,
-windowcontrols button:backdrop,
-headerbar windowcontrols button:backdrop:hover,
-windowcontrols button:backdrop:hover,
-headerbar windowcontrols button:backdrop:active,
-windowcontrols button:backdrop:active,
-headerbar windowcontrols button:backdrop:checked,
-windowcontrols button:backdrop:checked,
-headerbar button.titlebutton:backdrop,
-.titlebar button.titlebutton:backdrop,
-headerbar button.titlebutton:backdrop:hover,
-.titlebar button.titlebutton:backdrop:hover,
-headerbar button.titlebutton:backdrop:active,
-.titlebar button.titlebutton:backdrop:active,
-headerbar button.titlebutton:backdrop:checked,
-.titlebar button.titlebutton:backdrop:checked {
-  min-width: 31px;
-  min-height: 22px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 31px 22px;
-  transition: none;
-}
-
-/* Headerbar utility buttons (search, menu, etc.): keep the outer
- * button box untouched and add breathing room only to the inner icon/text.
- */
-headerbar button:not(.titlebutton) image,
-.titlebar button:not(.titlebutton) image,
-headerbar menubutton button:not(.titlebutton) image,
-.titlebar menubutton button:not(.titlebutton) image,
-headerbar button:not(.titlebutton) label,
-.titlebar button:not(.titlebutton) label,
-headerbar menubutton button:not(.titlebutton) label,
-.titlebar menubutton button:not(.titlebutton) label {
-  padding-left: 2px;
-  padding-right: 2px;
-}
 
 /* Gtk4 ColumnView/TreeView progress cells: keep text readable and avoid
  * swapping fill and trough colors on selected rows. */

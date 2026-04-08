@@ -2475,20 +2475,8 @@ The colour parameters are red, green, blue, and transparency or a name */
  * of the file to keep my changes visible.
  * ===================================================================*/
 
-/* General spacing */
-
-button label {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-button image {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 /* ===================================================================
-* Dialogs
+* All dialogs
 * ===================================================================*/
 
 /* Current Cinnamon dialog buttons (Confirm / Yes-No / logout / shutdown) */
