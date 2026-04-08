@@ -2495,6 +2495,20 @@ https://github.com/linuxmint/cinnamon-spices-applets
 * ===================================================================*/
 
 /* Current Cinnamon dialog buttons (Confirm / Yes-No / logout / shutdown) */
+.dialog {
+  border-image: url('menu-assets/background.png') 8;
+  font-size: 9.5pt;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: black;
+  padding-top: 16px;
+  padding-right: 22px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  /* width opcional; use com cuidado */
+  width: 28em;
+}
+
 .dialog-button-box {
   spacing: 12px;
 }
@@ -2534,6 +2548,41 @@ https://github.com/linuxmint/cinnamon-spices-applets
 .dialog-button:destructive-action:active {
   color: #bf1b1b;
 }
+
+.dialog .dialog-content-box {
+  spacing: 10px;
+}
+
+.dialog .message-dialog-title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 6px;
+}
+
+.dialog .message-dialog-description {
+  font-size: 10pt;
+  color: #444444;
+  padding-bottom: 4px;
+}
+
+.dialog .dialog-button-box {
+  spacing: 8px;
+  padding-top: 10px;
+}
+
+.dialog .dialog-button {
+  font-size: 9pt;
+  min-height: 20px;
+  padding: 5px 10px 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.dialog .dialog-button:default {
+  font-weight: bold;
+}
+
 
 /* ===================================================================
 * Run dialog
