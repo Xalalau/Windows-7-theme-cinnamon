@@ -2482,6 +2482,15 @@ https://github.com/linuxmint/cinnamon-spices-applets
 */
 
 /* ===================================================================
+* All applets
+* ===================================================================*/
+
+/* Just by setting paddings in the theme, elements in applets stop centering for some reason. Fix it. */
+.applet-box {
+  text-align: center;
+}
+
+/* ===================================================================
 * All dialogs
 * ===================================================================*/
 
