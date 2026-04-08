@@ -62,7 +62,9 @@ If you want the theme to look correct, stick to light setups.
 
 #### Change the wallpaper
 
-Set an [appropriate Windows 7 wallpaper](https://live.staticflickr.com/2685/4531929561_abf5cf4d71_o_d.jpg), which helps complete the overall look.
+Set an [appropriate Windows 7 wallpaper](https://github.com/maxik34/Project_7/tree/main/Wallpapers/PNG), which helps complete the overall look.
+
+Download here for a bonus: https://imgur.com/a/4IaTbVZ
 
 #### Install Microsoft fonts
 
@@ -105,12 +107,11 @@ This repo exists because I wanted a working repair, not a new full-time project.
 ## More media
 
 <img width="1920" height="1080" alt="Captura de tela de 2026-04-06 22-15-51" src="https://github.com/user-attachments/assets/be054488-b189-474c-8b56-62f1e00cdd81" />
-<img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-25-43" src="https://github.com/user-attachments/assets/01822219-dfea-4ca5-b380-3a9826b56d54" />
+<img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-25-43" src="https://github.com/user-attachments/assets/4139203d-bbaa-42df-8c6b-1b2c8395f0d6" />
 <img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-19-09" src="https://github.com/user-attachments/assets/b54e3769-6aaf-4dd8-ba66-34d06340f797" />
 <img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-20-06" src="https://github.com/user-attachments/assets/034edf25-387d-495b-a0cf-4071a3a15886" />
 <img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-24-30" src="https://github.com/user-attachments/assets/bc93bf1f-bfbe-42c3-b8e0-149b4749f3e2" />
 <img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-22-14" src="https://github.com/user-attachments/assets/c9b4c7d8-b3c7-4993-94da-c41ed7fb6a9d" />
 <img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-21-32" src="https://github.com/user-attachments/assets/c6b163e3-8a2d-439c-9137-7766a4f275df" />
-<img width="1920" height="1080" alt="Screenshot from 2026-04-08 07-20-34" src="https://github.com/user-attachments/assets/7d2b7f05-eadf-4424-9ccc-1fcb5c4a118e" />
-
+<img width="1920" height="1080" alt="Screenshot from 2026-04-08 14-03-58" src="https://github.com/user-attachments/assets/01b4bda8-d312-422e-a1c5-86baed4eba11" />
 
