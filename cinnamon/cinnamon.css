@@ -2465,9 +2465,14 @@ The colour parameters are red, green, blue, and transparency or a name */
 
 
 
+
+
 /* ===================================================================
  * Windows 7 theme fixes for Cinnamon 22.x
  * by Xalalau & GPT
+ * The theme is quite outdated (based on Dec 31 2019 Mint X) and I wasn't
+ * able to find the original Sass, so I'm just patching it here at the end
+ * of the file to keep my changes visible.
  * ===================================================================*/
 
 /* General spacing */
@@ -2482,22 +2487,9 @@ button image {
   padding-right: 4px;
 }
 
-/* Better progress bars */
-.window-list-item-box .progress,
-.grouped-window-list-item-box .progress {
-  background-color: #22d42f;
-}
-
-/* Keep the screen backdrop visible behind modal dialogs */
-.lightbox {
-  background-color: rgba(0, 0, 0, 0.46);
-}
-
-/* Compact grouped window list items */
-.grouped-window-list-item-box {
-  width: 50px;
-  spacing: 3px;
-}
+/* ===================================================================
+* Dialogs
+* ===================================================================*/
 
 /* Current Cinnamon dialog buttons (Confirm / Yes-No / logout / shutdown) */
 .dialog-button-box {
@@ -2539,6 +2531,35 @@ button image {
 .dialog-button:destructive-action:active {
   color: #bf1b1b;
 }
+
+/* ===================================================================
+* Run dialog
+* ===================================================================*/
+
+/* Keep the screen backdrop visible behind modal dialogs */
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.46);
+}
+
+/* ===================================================================
+* Window list (windowList.js)
+* ===================================================================*/
+
+/* Better progress bars */
+.window-list-item-box .progress,
+.grouped-window-list-item-box .progress {
+  background-color: #22d42f;
+}
+
+/* Compact grouped window list items */
+.grouped-window-list-item-box {
+  width: 50px;
+  spacing: 3px;
+}
+
+/* ===================================================================
+* End session dialog
+* ===================================================================*/
 
 /* Windows 7-like end-session dialog. */
 .dialog.end-session-dialog {
@@ -2618,15 +2639,24 @@ button image {
   color: #b51515;
 }
 
+/* ===================================================================
+* PopupMenu (popupMenu.js)
+* ===================================================================*/
+
 /* Better contrast for weak secondary text on white popups */
 .popup-menu-item:insensitive,
 .popup-inactive-menu-item,
 .popup-device-menu-item .popup-inactive-menu-item,
-.calendar-month-label,
-.calendar-events-main-box,
-.calendar-events-no-events-icon,
-.calendar-events-no-events-label,
-.calendar-events-date-label,
+.popup-device-menu-item,
+.popup-device-menu-item StLabel {
+  color: #5f5f5f;
+}
+
+/* ===================================================================
+* Power applet
+* ===================================================================*/
+
+/* Better contrast for weak secondary text on white popups */
 .power-profile-item,
 .power-profile-item-label,
 .power-profile-label,
@@ -2636,9 +2666,20 @@ button image {
 .battery-percentage,
 .battery-status,
 .battery-label,
-.power-applet-label,
-.popup-device-menu-item,
-.popup-device-menu-item StLabel {
+.power-applet-label {
+  color: #5f5f5f;
+}
+
+/* ===================================================================
+* Date applet
+* ===================================================================*/
+
+/* Better contrast for weak secondary text on white popups */
+.calendar-month-label,
+.calendar-events-main-box,
+.calendar-events-no-events-icon,
+.calendar-events-no-events-label,
+.calendar-events-date-label {
   color: #5f5f5f;
 }
 
@@ -2660,6 +2701,10 @@ button image {
 .calendar-event-button:hover .calendar-event-countdown {
   color: #1d1d1d;
 }
+
+/* ===================================================================
+* Sound applet
+* ===================================================================*/
 
 /* Player overlay in the sound applet:
    fix only the overlay background and text contrast. */
@@ -2688,7 +2733,9 @@ button image {
   padding: 3px;
 }
 
-/* Corner Bar */
+/* ===================================================================
+* Corner Bar applet
+* ===================================================================*/
 
 .applet-cornerbar-box {
   padding: 0;
