@@ -2983,11 +2983,28 @@ read if you used those and something break with a version upgrade you're on your
 https://docs.gtk.org/gtk3/index.html#classes
 https://docs.gtk.org/gtk3/css-overview.html
 https://docs.gtk.org/gtk3/css-properties.html
+https://github.com/linuxmint/nemo/blob/master/gresources/nemo-style-application.css
 */
 
 /* New accent color so that the names of desktop icons don't become invisible. */
 @define-color theme_selected_bg_color #1f9ede;
 @define-color theme_unfocused_selected_bg_color #1f9ede;
+
+/* ===================================================================
+* Nemo (Requires to be in the GTK3 file)
+* ===================================================================*/
+
+/* Better Nemo tree view spacing */
+.nemo-window .sidebar .cell {
+  padding-bottom: 1px;
+}
+
+/* Better Nemo file properties header spacing */
+.nemo-window treeview.view header button label,
+.nemo-window treeview header button label,
+.nemo-window treeview.view > header > button > label {
+  padding-left: 8px;
+}
 
 /* ===================================================================
 * General buttons
@@ -3245,17 +3262,9 @@ row:selected treeview.view trough {
 }
 
 /* ===================================================================
-* Nemo (Requires to be in the GTK3 file)
+* GtkTreeView
 * ===================================================================*/
 
-/* Better Nemo tree view spacing */
-.nemo-window .sidebar .cell {
-  padding-bottom: 2px;
-}
-
-/* Better Nemo file properties header spacing */
-.nemo-window treeview.view header button label,
-.nemo-window treeview header button label,
-.nemo-window treeview.view > header > button > label {
-  padding-left: 8px;
+menubar > menuitem {
+  padding: 6px;
 }
