@@ -31,19 +31,29 @@ This theme is meant to be installed following the same overall process shown in 
 
 Download the [fixed Windows 7 theme pack](https://github.com/Xalalau/Windows-7-theme-cinnamon/archive/refs/heads/master.zip), extract it, and copy the extracted folder to your `~/.themes` directory. Then open Mint’s **Themes** settings and apply it to applications and desktop.
 
-If you prefer, the theme mixes very well with [Windows 11 icons](https://github.com/yeyushengfan258/Win11-icon-theme).
-
-### 2. Install the Windows 7 icon set
+### 2. Install an icon set
 
 Download the [fixed Windows 7 icon set](https://github.com/Xalalau/Windows-7-Icons-Cinnamon/archive/refs/heads/master.zip) and extract it into your `~/.icons` directory, then select it in Mint’s **Themes** settings.
 
-### 3. Install **CinnVIIStarkMenu**
+If you prefer, the theme mixes very well with [Windows 11 icons](https://github.com/yeyushengfan258/Win11-icon-theme).
 
-This is important.
+But my personal favorite is [Papirus](https://community.linuxmint.com/software/view/papirus-icon-theme).
 
-The regular Cinnamon menu is **not supported well by this theme**. The setup depends on **CinnVIIStarkMenu** for a more appropriate Windows 7-style start menu experience. The same applet is also recommended in the original tutorial.
+### 3. Use a light theme variant
 
-In Cinnamon:
+This is also important.
+
+Use **light themes** and light theme combinations wherever possible. Dark variants tend to introduce visual inconsistencies, unreadable text, or mismatched assets. GIMP is a good example of a problematic application because it tends to come in dark mode (Flatpak) and immediately shows style errors.
+
+If you want the theme to look correct, stick to light setups.
+
+### 4. Optional finishing touches
+
+#### Try out a new menu
+
+I support both **[CinnVIIStarkMenu](https://cinnamon-spices.linuxmint.com/applets/view/281)** and **[Cinnamenu](https://cinnamon-spices.linuxmint.com/applets/view/322)**.
+
+E.g. In Cinnamon:
 
 - right-click the panel
 - open **Applets**
@@ -52,21 +62,11 @@ In Cinnamon:
 - install **CinnVIIStarkMenu**
 - add it to the panel
 
-### 4. Use a light theme variant
-
-This is also important.
-
-Use **light themes** and light theme combinations wherever possible. Dark variants tend to introduce visual inconsistencies, unreadable text, or mismatched assets. GIMP is a good example of a problematic application because it tends to come in dark mode (Flatpak) and immediately shows style errors.
-
-If you want the theme to look correct, stick to light setups.
-
-### 5. Optional finishing touches
-
 #### Change the wallpaper
 
 Set an [appropriate Windows 7 wallpaper](https://github.com/maxik34/Project_7/tree/main/Wallpapers/PNG), which helps complete the overall look.
 
-Download here for a bonus: https://imgur.com/a/4IaTbVZ
+Download from here for a bonus: https://imgur.com/a/4IaTbVZ
 
 #### Install Microsoft fonts
 
@@ -90,7 +90,7 @@ I recommend using **xscreensaver**.
 
 Features like this belong to the Windows 7 era. It's not required, but it matches the spirit of the setup better.
 
-#### Remove Windows logos
+#### Remove Windows logo
 
 If you are not a fan of Microsoft but do like Windows 7 style, I assume you did not install the official background and want to remove the Start Menu logo. To do that, run the command below:
 
@@ -98,7 +98,7 @@ If you are not a fan of Microsoft but do like Windows 7 style, I assume you did 
 sed -i '/#panelLeft \.applet-box:first-child {/,/^}/d; /#panelLeft \.applet-box:first-child:hover {/,/^}/d; /#panelLeft \.applet-box:first-child:active {/,/^}/d' ~/.themes/Windows-7-Theme-Cinnamon/cinnamon/cinnamon.css && nohup cinnamon --replace >/dev/null 2>&1 & disown
 ```
 
-If you want to re-enable the Start button, reinstall the theme.
+If you want to re-enable the Start Menu logo, reinstall the theme.
 
 ## Scope and maintenance
 
