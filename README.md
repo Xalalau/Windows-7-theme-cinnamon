@@ -88,6 +88,16 @@ I recommend using **xscreensaver**.
 
 Features like this belong to the Windows 7 era. It's not required, but it matches the spirit of the setup better.
 
+#### Remove Windows logos
+
+If you are not a fan of Microsoft but do like the operating system, I assume you did not install the Windows 7 background and want to remove the Start Menu logo. To do that, run the command below:
+
+```bash
+sed -i '/#panelLeft \.applet-box:first-child {/,/^}/d; /#panelLeft \.applet-box:first-child:hover {/,/^}/d; /#panelLeft \.applet-box:first-child:active {/,/^}/d' ~/.themes/Windows-7-Theme-Cinnamon/cinnamon/cinnamon.css && nohup cinnamon --replace >/dev/null 2>&1 & disown
+```
+
+If you want to re-enable the Start button, reinstall the theme.
+
 ## Scope and maintenance
 
 This repository is just a **rough** fix so people can use the theme again.
