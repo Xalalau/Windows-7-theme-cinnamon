@@ -316,22 +316,6 @@ background: url('handle-vert.png') no-repeat center center;
   border-image: none;
 }
 
-#panelLeft .applet-box:first-child {
-  background: url("orbs/OBB1.png");
-  border-image: none;
-  background-position: center center;
-  transition-duration: 300;
-  width: 40px;
-  color: rgba(255,0,0,0) !important;
-}
-#panelLeft .applet-box:first-child:hover {
-  transition-duration: 200; background: url("orbs/OBB2.png");
-  border-image: none;
-}
-#panelLeft .applet-box:first-child:active {
-  background: url("orbs/OBB3.png");
-  border-image: none;
-}
 
 #panelLeft:dnd {
   background-gradient-direction: vertical;
@@ -3341,7 +3325,7 @@ https://github.com/linuxmint/cinnamon-spices-applets
   min-height: 30px;
   margin: 0 8px;
   padding: 6px 8px;
-  color: #4f6275;
+  color: #2e3236;
 
   border: 1px solid transparent;
   border-radius: 3px;
@@ -3667,7 +3651,7 @@ StScrollBar StButton#hhandle:hover {
 .right-buttons-box StIcon,
 .right-buttons-box .popup-menu-item,
 .right-buttons-box StButton {
-  color: #5e6b78;
+  color: #2e3236;
   text-shadow: none;
 }
 
@@ -3695,7 +3679,7 @@ StScrollBar StButton#hhandle:hover {
 .right-buttons-box .popup-menu-item:focus StIcon,
 .right-buttons-box StButton:hover StIcon,
 .right-buttons-box StButton:focus StIcon {
-  color: #36506b;
+  color: #2e3236;
 }
 
 /* ==========================================================
@@ -3832,7 +3816,7 @@ StScrollBar StButton#hhandle:hover {
 .cinnamenu .menu-categories-scrollbox .menu-favorites-button,
 .cinnamenu .menu-categories-scrollbox .menu-places-button,
 .cinnamenu .menu-categories-scrollbox .popup-menu-item {
-  color: #484e53;
+  color: #2e3236;
 }
 
 .cinnamenu-categories-workspaces-scrollbox .menu-category-button StIcon,
@@ -3843,7 +3827,7 @@ StScrollBar StButton#hhandle:hover {
 .cinnamenu .menu-categories-scrollbox .menu-favorites-button StIcon,
 .cinnamenu .menu-categories-scrollbox .menu-places-button StIcon,
 .cinnamenu .menu-categories-scrollbox .popup-menu-item StIcon {
-  color: #484e53;
+  color: #2e3236;
   opacity: 1;
   icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.50);
 }
