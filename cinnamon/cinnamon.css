@@ -138,7 +138,8 @@ background: url('handle-vert.png') no-repeat center center;
 }
 
 /* Cinnamon 3.2 fix */
-.popup-menu,
+/* It's getting in my way breaking cinnamenu context menus - Xalalau */
+/* .popup-menu,
 .menu {
   font-size: 9.5pt;
   padding-left: 0px;
@@ -155,7 +156,7 @@ background: url('handle-vert.png') no-repeat center center;
   border-left: 6px;
   border-right: 6px;
   border-bottom: 6px;
-}
+} */
 
 .popup-submenu-menu-item:open {
   background-color: #2975E9;
@@ -3584,7 +3585,7 @@ StScrollBar StButton#hhandle:hover {
 /* Extra right margin for the right-side panel items */
 .menu-category-button.starkmenu-quicklink-button,
 .menu-category-button-selected.starkmenu-quicklink-button-selected {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* -----------------------------
@@ -3685,4 +3686,354 @@ StScrollBar StButton#hhandle:hover {
 .right-buttons-box StButton:hover StIcon,
 .right-buttons-box StButton:focus StIcon {
   color: #36506b;
+}
+
+/* ==========================================================
+ * Cinnamenu
+ * ========================================================== */
+
+/* -----------------------------
+ * Main structure
+ * ----------------------------- */
+.menu-background {
+  color: #000;
+  padding: 0;
+  border-image: none;
+  border: 1px solid rgba(84, 112, 145, 0.95);
+  border-radius: 8px;
+  background-color: rgba(236, 242, 249, 0.98);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.cinnamenu-menu-top-pane {
+  spacing: 0;
+  padding: 0;
+}
+
+/* Left panel */
+.cinnamenu-categories-workspaces-scrollbox {
+  padding: 10px 0 8px 0;
+  spacing: 0;
+  color: #eef5fc;
+
+  background-gradient-direction: vertical;
+  background-gradient-start: #496985;
+  background-gradient-end: #7493b2;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset -1px 0 0 rgba(70, 92, 115, 0.30);
+  border-radius: 8px 0 0 0;
+}
+
+/* Right panel */
+.cinnamenu-applications-list-box,
+.cinnamenu-applications-grid-box {
+  spacing: 8px;
+  padding: 10px;
+  color: #5e6b78;
+
+  background-gradient-direction: vertical;
+  background-gradient-start: #f4f7fb;
+  background-gradient-end: #e8eef5;
+  background-color: rgba(236, 242, 249, 0.98);
+
+  border-radius: 0 8px 0 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
+}
+
+.cinnamenu-applications-list-box {
+  padding-right: 4px;
+  padding-left: 10px;
+}
+
+.cinnamenu-applications-grid-box {
+  padding-right: 4px;
+  padding-left: 10px;
+}
+
+/* -----------------------------
+ * Search
+ * ----------------------------- */
+.cinnamenu .menu-search-box {
+  spacing: 8px;
+  padding: 6px 10px 8px 10px;
+  background-color: transparent;
+}
+
+.cinnamenu #menu-search-entry {
+  min-height: 28px;
+  padding: 4px 9px;
+  color: #22384e;
+  background-color: #ffffff;
+
+  border: 1px solid #9eb6ce;
+  border-radius: 4px;
+
+  caret-color: #22384e;
+  selected-color: #ffffff;
+  selection-background-color: #3d7cc9;
+
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+
+.cinnamenu #menu-search-entry:focus {
+  border: 1px solid #6ea6de;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(170, 210, 245, 0.9);
+}
+
+.cinnamenu .menu-search-entry-icon {
+  icon-size: 18px;
+  color: #5b6f84;
+}
+
+/* -----------------------------
+ * Sidebar categories
+ * ----------------------------- */
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-selected,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-greyed,
+.cinnamenu-categories-workspaces-scrollbox .menu-favorites-button,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item,
+.cinnamenu .menu-categories-scrollbox .menu-category-button,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-selected,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-greyed,
+.cinnamenu .menu-categories-scrollbox .menu-favorites-button,
+.cinnamenu .menu-categories-scrollbox .menu-places-button,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item {
+  spacing: 8px;
+  margin: 0 8px;
+  padding: 6px 8px;
+
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button,
+.cinnamenu-categories-workspaces-scrollbox .menu-favorites-button,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item,
+.cinnamenu .menu-categories-scrollbox .menu-category-button,
+.cinnamenu .menu-categories-scrollbox .menu-favorites-button,
+.cinnamenu .menu-categories-scrollbox .menu-places-button,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item {
+  color: #484e53;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-favorites-button StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button StIcon,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-category-button StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-favorites-button StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-places-button StIcon,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item StIcon {
+  color: #484e53;
+  opacity: 1;
+  icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button:hover,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-selected,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-hover,
+.cinnamenu-categories-workspaces-scrollbox .menu-favorites-button:hover,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button:hover,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:hover,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:selected,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:focus,
+.cinnamenu .menu-categories-scrollbox .menu-category-button:hover,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-selected,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-hover,
+.cinnamenu .menu-categories-scrollbox .menu-favorites-button:hover,
+.cinnamenu .menu-categories-scrollbox .menu-places-button:hover,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:hover,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:selected,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:focus {
+  color: #22384e;
+
+  background-gradient-direction: vertical;
+  background-gradient-start: #f7fbff;
+  background-gradient-end: #d7ebff;
+
+  border: 1px solid #8db2d8;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 0 0 1px rgba(255, 255, 255, 0.55);
+
+  text-shadow: none;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button:hover StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-selected StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-hover StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-favorites-button:hover StIcon,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button:hover StIcon,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:hover StIcon,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:selected StIcon,
+.cinnamenu-categories-workspaces-scrollbox .popup-menu-item:focus StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-category-button:hover StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-selected StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-hover StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-favorites-button:hover StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-places-button:hover StIcon,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:hover StIcon,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:selected StIcon,
+.cinnamenu .menu-categories-scrollbox .popup-menu-item:focus StIcon {
+  color: #36506b;
+  icon-shadow: none;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-label,
+.cinnamenu-categories-workspaces-scrollbox .menu-places-button-label,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-label,
+.cinnamenu .menu-categories-scrollbox .menu-places-button-label {
+  color: inherit;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-greyed,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-greyed {
+  color: rgba(238, 245, 252, 0.55);
+  font-style: italic;
+}
+
+.cinnamenu-categories-workspaces-scrollbox .menu-category-button-greyed StIcon,
+.cinnamenu .menu-categories-scrollbox .menu-category-button-greyed StIcon {
+  opacity: 0.45;
+}
+
+/* -----------------------------
+ * Applications - list view
+ * ----------------------------- */
+.cinnamenu-application-list-button {
+  spacing: 8px;
+  padding: 5px 7px;
+
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #5e6b78;
+}
+
+.cinnamenu-application-list-button StIcon {
+  color: #5b6f84;
+}
+
+.cinnamenu-application-list-button:hover,
+.cinnamenu-application-list-button:selected,
+.cinnamenu-application-list-button:focus {
+  color: #22384e;
+
+  background-gradient-direction: vertical;
+  background-gradient-start: #f7fbff;
+  background-gradient-end: #d7ebff;
+
+  border: 1px solid #8db2d8;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 0 0 1px rgba(255, 255, 255, 0.55);
+
+  text-shadow: none;
+}
+
+.cinnamenu-application-list-button:hover StIcon,
+.cinnamenu-application-list-button:selected StIcon,
+.cinnamenu-application-list-button:focus StIcon {
+  color: #36506b;
+}
+
+.cinnamenu-application-list-button-label {
+  padding: 0 0 0 6px;
+  color: inherit;
+}
+
+.cinnamenu-application-list-button-icon {
+  padding-top: 2px;
+}
+
+/* -----------------------------
+ * Applications - grid view
+ * ----------------------------- */
+.cinnamenu-application-grid-button {
+  spacing: 6px;
+  padding: 8px 6px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #5e6b78;
+}
+
+.cinnamenu-application-grid-button StIcon {
+  color: #5b6f84;
+}
+
+.cinnamenu-application-grid-button:hover,
+.cinnamenu-application-grid-button:focus,
+.cinnamenu-application-grid-button:selected {
+  color: #22384e;
+
+  background-gradient-direction: vertical;
+  background-gradient-start: #f7fbff;
+  background-gradient-end: #d7ebff;
+
+  border: 1px solid #8db2d8;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+.cinnamenu-application-grid-button:hover StIcon,
+.cinnamenu-application-grid-button:focus StIcon,
+.cinnamenu-application-grid-button:selected StIcon {
+  color: #36506b;
+}
+
+.cinnamenu-application-grid-button-label {
+  padding: 2px 0 0 0;
+  color: inherit;
+  font-size: 0.92em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Grid width values inherited from Cinnamenu */
+.cinnamenu-application-grid-button.col2 { min-width: 250px; }
+.cinnamenu-application-grid-button.col3 { min-width: 170px; }
+.cinnamenu-application-grid-button.col4 { min-width: 125px; }
+.cinnamenu-application-grid-button.col5 { min-width: 98px; }
+.cinnamenu-application-grid-button.col6 { min-width: 80px; }
+.cinnamenu-application-grid-button.col7 { min-width: 67px; }
+
+/* -----------------------------
+ * Scrollbars - only inside Cinnamenu
+ * ----------------------------- */
+.cinnamenu-categories-workspaces-scrollbox StScrollBar StBin#trough,
+.cinnamenu-applications-list-box StScrollBar StBin#trough,
+.cinnamenu-applications-grid-box StScrollBar StBin#trough {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.cinnamenu-categories-workspaces-scrollbox StScrollBar StButton#vhandle,
+.cinnamenu-categories-workspaces-scrollbox StScrollBar StButton#hhandle,
+.cinnamenu-applications-list-box StScrollBar StButton#vhandle,
+.cinnamenu-applications-list-box StScrollBar StButton#hhandle,
+.cinnamenu-applications-grid-box StScrollBar StButton#vhandle,
+.cinnamenu-applications-grid-box StScrollBar StButton#hhandle {
+  background-color: rgba(120, 140, 165, 0.60);
+  border-radius: 6px;
+}
+
+.cinnamenu-categories-workspaces-scrollbox StScrollBar StButton#vhandle:hover,
+.cinnamenu-categories-workspaces-scrollbox StScrollBar StButton#hhandle:hover,
+.cinnamenu-applications-list-box StScrollBar StButton#vhandle:hover,
+.cinnamenu-applications-list-box StScrollBar StButton#hhandle:hover,
+.cinnamenu-applications-grid-box StScrollBar StButton#vhandle:hover,
+.cinnamenu-applications-grid-box StScrollBar StButton#hhandle:hover {
+  background-color: rgba(95, 120, 150, 0.82);
 }
